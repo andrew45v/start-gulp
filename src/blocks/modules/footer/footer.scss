@@ -1,0 +1,152 @@
+.cards{
+    background-color: $primary-4;
+    .img{
+        margin: 5px 0;
+        float: left;
+        img{
+        line-height: 29.5px;
+    }
+}
+.im{
+    margin: 5px 0;
+    float: right;
+    text-align: left;
+    img{
+        margin-right: 40px;
+        margin-top: 5px;
+    }
+}
+@media (max-width:990px) and (min-width:321px) {
+    .im{
+        text-align: center;
+        float: none;
+        justify-content: space-between;
+        margin-left: auto;
+        margin-right: auto;
+        img{
+            margin-right: 25px;
+        }
+    }
+}
+@media (max-width:320px) {
+   .im{
+    margin-left: 40px;
+    float: none;
+        img{
+            margin-right: 35px;
+        }
+    }
+} 
+}
+
+
+//footer bot
+
+.bot{
+    background: url('../../../img/Bg2.png') $primary-1 center center no-repeat;
+    .a1{
+    margin-top: 30px;
+    margin-bottom:30px ;
+    justify-content: space-around;
+    a{
+        color: $primary-4;
+        text-decoration: none;
+        
+    }
+    
+        a{
+            color: $primary-4;
+            text-decoration: none;
+            font-size: small;
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        }  
+    }
+    .hr{
+        position: relative;
+    hr{
+        border: solid $primary-4 1px;
+        
+    }
+    .d1 {
+        position: absolute;
+        width: 35px; 
+        height: 35px;
+        background: $primary-4;
+        border-radius: 50%;
+        z-index: 1;
+        margin-left: auto;
+        margin-right: auto;
+        color:$primary-1 ;   
+        line-height: 35px;
+        text-align: center; 
+        font-size: 40px;
+        font-family: $font-bold;
+        bottom: -16px;
+        left: 550px;
+    }
+    @media(max-width:1024px) and (min-width:776px){
+        .d1{
+            left: 460px;
+        }
+    }
+    @media(max-width:776px) and (min-width:321px){
+        .d1{
+            left: 340px;
+        }
+    }
+}
+
+.menu1{
+    align-items: center;
+    margin-top: 40px;
+    text-transform: uppercase;
+    margin-left: 12px;
+    margin-bottom: 25px;
+    ul{
+        list-style-type: none;
+        padding-right: 30px;
+        a{
+            @include font($base-light,$font-medium,16px);
+            text-decoration: none;
+        }
+        span{
+            margin:0 10px 0 10px ;
+            @include font($base-light,$font-medium,16px);
+        }
+    }
+    @media(max-width:1024px){
+        ul{
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+}
+.p1{
+    p{
+        text-align: center;
+        @include font($primary-4,$font-medium,16px);
+        margin-bottom: 22px;
+    }
+}
+.amini{
+    text-align: left;
+    margin-top: 15px;
+    a{
+        @include font($base-light,$font-medium,18px);
+
+    }
+}
+.amini1{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: left;
+    @include font($primary-4,$font-medium,16px);
+}
+}
+
+@media(max-width:1200px){
+    ul{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}

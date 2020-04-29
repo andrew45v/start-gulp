@@ -1,0 +1,151 @@
+p,h1,h2,h3,h4,h5,h6,ul,ol,body{
+    margin: 0;
+    padding: 0;
+}
+.menu {
+    box-shadow: 0 2px 15px $base-dark;
+    a{
+        font-family: 'Roboto-Regular', sans-serif;
+        text-decoration: none;
+        text-transform: uppercase;
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        color: $base-light;
+        
+    }
+    a:hover{
+        text-decoration: none;
+        color: $primary-3;
+    }
+    p{
+        color: $primary-4;
+        font-family: 'Roboto-Regular', sans-serif;
+        font-size: 20px;
+    }
+}
+
+.header{
+    background: url(../../../img/Bg1.png) #013056 center center no-repeat; 
+    .row{
+        align-items: center;
+        padding: 10px 0;
+
+    }
+    p{
+        color: $primary-4;
+        font-family: 'Roboto-Regular';
+        font-size: 20px;
+        span{
+            font-family: 'Roboto-Thin';
+        } 
+    }
+    a{
+        text-decoration: none;
+        color: $base-light;
+        font-family: 'Roboto-Regular', sans-serif;
+        font-size:20px;
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+    }
+}
+.social{
+    a{
+        color: $primary-4;
+        &:hover{
+            color: $base-light;
+        }
+    }
+}
+.sprite{
+    background: url('../img/css_sprites.png');
+    display: inline-block;
+    margin-left: 3px;
+}
+.login{
+    width: 41px; height: 25px;
+    background-position: -10px -10px;
+}
+.chat{
+    width: 51px; height: 30px;
+    background-position: -10px -55px;
+}
+
+@media(max-width:1200px){
+    .header p{
+        font-size: 18px;
+    }
+    .header a{
+        font-size: 18px;
+    }
+    .chat{
+        width: 41px;
+        height: 28px;
+        background-position: -39px -17px;
+        background-size: 105%;
+    }
+    .chat-padding{
+        padding: 0;
+    }
+}
+
+//  burger
+.burger,
+.burger::after,
+.burger::before {
+    width: 50px;
+    height: 4px;
+    background-color: $base-light;
+    position: absolute;
+}
+.burger::after {
+    content: "";
+    top: -10px;
+}
+.burger::before {
+    content: "";
+    top: 10px;
+}
+
+
+// 2 header
+nav{
+    background-color: $primary-3;
+    position: relative;
+    ul{
+        padding: 0;
+        display: flex;
+        align-items: stretch;
+        list-style-type: none;
+        width: 100%;
+        text-align: center;
+        li{
+            flex-grow: 1;
+            padding: 10px 0;
+            position: relative;
+            
+            span{
+                color: $base-light;
+                position: absolute;
+                right: -1px;
+            }
+            &:hover{
+                background-color: $primary-4;
+                a {
+                    color: $primary-3;
+                }
+                
+            }
+            .line-left{
+                left: 0;
+                width: 1px;
+            }
+        }
+    }
+}
+
+
+
+
+
